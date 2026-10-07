@@ -22,6 +22,7 @@ def run_tests():
     print(is_safe_speed(10, 5))    # expect: False
     print(is_safe_speed(10, 3))    # expect: True
     print(is_safe_speed(2, 3))    # expect: False
-
+    for d, s in [(10, 4), (10, 5), (2, 3), (4, 1)]:
+        print("distance", d, "speed", s, "->", is_safe_speed(d, s))
 if __name__ == "__main__":
     run_tests()
